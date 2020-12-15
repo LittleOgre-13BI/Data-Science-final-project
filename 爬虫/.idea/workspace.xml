@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fcf0e1a2-a607-4e22-a4e8-8213c22cee53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/addrTime.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sinaNews.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12月8日成都市新增4例新冠肺炎确诊病例和1名无症状感染者" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12月8日，成都市新增4例新冠肺炎确诊病例和1名无症状感染者" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creatfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haha" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/世卫组织：美国疫情艰难 每分钟有一到两人死于新冠肺炎" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/世卫组织：美国疫情艰难 每分钟都有一到两人死于新冠肺炎" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/四川新冠疫苗来了！12类人群年内优先接种" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/成都市新增4例新冠肺炎确诊病例和1名无症状感染者" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/无题" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/牧师鼓励民众趁早感染新冠：很多人感染了都没死" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/糟糕！勇士新冠阳性球员确认，又损失两大主力！" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/辟谣！12月8日，又一“赵某”现身：我不是成都新冠确诊者！" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="爬虫" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1kjo35lZXc8hO9jS2Mriq59qYFg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.sinaNews">
+    <configuration name="addrTime" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/addrTime.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="creatfile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/creatfile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sinaNews" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sinaNews.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.sinaNews" />
+        <item itemvalue="Python.test2" />
+        <item itemvalue="Python.addrTime" />
+        <item itemvalue="Python.practice" />
+        <item itemvalue="Python.creatfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcf0e1a2-a607-4e22-a4e8-8213c22cee53" name="Default Changelist" comment="" />
+      <created>1606223158520</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606223158520</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="379" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607435469986">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="379" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1607435469986" />
+    <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1607509740006">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607509740006" />
+    <state width="746" height="252" key="GridCell.Tab.0.bottom" timestamp="1608017751653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608017751653" />
+    <state width="746" height="252" key="GridCell.Tab.0.center" timestamp="1608017751653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608017751653" />
+    <state width="746" height="252" key="GridCell.Tab.0.left" timestamp="1608017751652">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608017751652" />
+    <state width="746" height="252" key="GridCell.Tab.0.right" timestamp="1608017751653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608017751653" />
+    <state width="746" height="252" key="GridCell.Tab.1.bottom" timestamp="1608017751653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="252" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608017751653" />
+    <state width="746" height="252" key="GridCell.Tab.1.center" timestamp="1608017751653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="252" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1608017751653" />
+    <state width="746" height="252" key="GridCell.Tab.1.left" timestamp="1608017751653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="252" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1608017751653" />
+    <state width="746" height="252" key="GridCell.Tab.1.right" timestamp="1608017751653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="252" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1608017751653" />
+    <state x="542" y="77" key="SettingsEditor" timestamp="1608009604443">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="542" y="77" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608009604443" />
+    <state x="454" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1608005012562">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="454" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1608005012562" />
+    <state x="432" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608014875402">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="432" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608014875402" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/practice.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sinaNews.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
