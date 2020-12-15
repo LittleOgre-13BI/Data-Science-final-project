@@ -1,3 +1,22 @@
+# README
+
+
+
+sinaNews.py是6.13新浪新闻的爬取样例样例
+
+
+
+爬取页面
+
+![](C:\Users\86152\Desktop\大二上\数据科学\大作业\爬虫\新浪滚动新闻.jpg)
+
+
+
+
+
+爬取代码
+
+```python
 import requests                                 #获取网页信息
 import json                                     #处理json格式的数据
 from bs4 import BeautifulSoup                   #用于数据抽取
@@ -105,4 +124,7 @@ for page in range(1,153):
 
 
 
+
+
+```
 
