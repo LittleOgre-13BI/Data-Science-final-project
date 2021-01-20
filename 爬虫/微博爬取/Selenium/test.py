@@ -1,9 +1,16 @@
 import re
+import os
 
-s = '【“<a target="_blank" render="ext" suda-uatrack="key=topic_click&amp;value=click_topic" class="a_topic" extra-data="type=topic" href="//s.weibo.com/weibo?q=%23%E6%AD%A6%E6%B1%89%E4%BB%81%E7%88%B1%E5%8C%BB%E9%99%A2%E6%B3%95%E4%BA%BA%E4%BB%A3%E8%A1%A8%E4%B8%BA%E8%80%81%E8%B5%96%23&amp;from=default">#武汉仁爱医院法人代表为老赖#</a>” 院长：我们是莆系但不坏】'
+fw = open(r'C:\Users\86152\Desktop\大二上\数据科学\大作业\爬虫\微博爬取\Selenium\新浪新闻\202006\202006251003.txt','rb')
+text = fw.read()
+try:
+    text = text.decode('utf8')
+except Exception:
+    text = text.decode('utf8', 'ignore')
+fw.close()
+text = re.subn('\n','',text)
 
-name = re.findall(r'【(.*?)】',s)
-
-name = ''.join(name)
-name = re.sub(r'<a(.*?)>#|#</a>','',name)
-print(name)
+comment = re.findall(r'<comments>(.*?)</comments>',text[0])
+print(comment)
+comment = re.split('\r',comment[0])
+print(comment)

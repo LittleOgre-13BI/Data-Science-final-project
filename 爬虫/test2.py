@@ -1,19 +1,18 @@
-import codecs
 
-look = codecs.lookup(' gb2312 ')
+from selenium import webdriver
+import time,re,random
 
-look2 = codecs.lookup(' utf-8 ')
+browser = webdriver.Chrome()
+browser.get('http://weibo.com/')
+time.sleep(30)#趁这30秒手动登录微博
+sumpage = 12147
+fw = open("result1-12147.txt",'a')
 
-a = ' 我爱北京 '
+for page in range(1,sumpage+1):
+    browser.get('http://weibo.cn/breakingnews?page='+str(page))
+    html = browser.page_source
+    print('PageNumber: '+ str(page))
+    fw.write(html+'\n')
 
-# print(len(a),a)
-
-b = look.decode(a.encode('gb2312'))
-
-# print(b[1],b[0],type(b[0]))
-
-b2 = look.encode(b[0])
-
-print(b2[1],b2[0],type(b2[0]))
-#
-# print(len(b2[0]))
+    time.sleep(10+random.randint(1,9))#设个随机的时间，不能爬太快
+fw.close()

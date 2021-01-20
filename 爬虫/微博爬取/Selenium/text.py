@@ -43,7 +43,10 @@ def getNewsDetail(d,newsList,path):
             pass
         
         news['comments'] = commentList
-        t = re.findall(r'\d', news['time'])
+        t = re.split(r'\D', news['time'])
+        for i in range(1,3):
+            if len(t[i]) < 2:
+                t[i] = '0'+t[i]
         t = ''.join(t)
         fw = open(path + '/' + t + '.txt', 'w', encoding='utf-8')
         fw.write('<source>' + news['source'] + '</source>' + '\n<title>' + news['title'] + '</title>' + '\n<time>' +

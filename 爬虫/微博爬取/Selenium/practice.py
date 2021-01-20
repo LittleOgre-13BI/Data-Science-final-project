@@ -6,8 +6,8 @@ import text
 
 browser = webdriver.Chrome(r".\chromedriver_win32\chromedriver.exe")
 browser.get('http://weibo.com/')
-aimRelevance = re.compile(r'肺炎|疫情|新冠|新型冠状|防疫|口罩|医疗物资|病毒')
-time.sleep(30)
+aimRelevance = re.compile(r'肺炎|疫情|新冠|新型冠状|防疫|口罩|医疗物资|病毒|病例')
+time.sleep(60)
 
 
 def checkPages(d):
@@ -31,7 +31,16 @@ def checkNextpage(d):
     print("couldn't find next page url")
     return ''
 
-def selectText(d):
+def checkTime(src,dest):
+    for i in range(0, 3):
+        a = int(dest[i * 2 : i * 2 + 2])
+        b = int(src[i * 2 : i * 2 + 2])
+        if a > b:
+             return True
+    return False
+
+
+def selectText(d,processTime):
     texts = d.find_elements_by_class_name('WB_detail')
     newsList = []
     for text in texts:
@@ -40,6 +49,12 @@ def selectText(d):
         name = re.findall(r'【(.*?)】',text.text)
         name = ''.join(name)
         name = re.sub(r'<a(.*?)>#|#</a>', '', name)
+        if name is None or name == '':
+            name =text.text
+            news['title'] = ''
+        else:
+            news['title'] = name
+
         global topics
         try:
             topics = text.find_elements_by_class_name('a_topic')
@@ -53,8 +68,6 @@ def selectText(d):
 
         if len(name) > 0 or state:
             if aimRelevance.search(name) is not None or state:
-                news['title'] = name
-
                 try:
                     opt = text.find_element_by_class_name('WB_text_opt')
                     news['url'] = str(opt.get_attribute('href'))
@@ -62,6 +75,13 @@ def selectText(d):
                         source = text.find_element_by_class_name('WB_from')
                         source = source.find_elements_by_tag_name('a')
                         news['time'] = str(source[0].text)
+                        t = re.split(r'\D', news['time'])
+                        for i in range(1, 3):
+                            if len(t[i]) < 2:
+                                t[i] = '0' + t[i]
+                        t = ''.join(t)
+                        if checkTime(processTime,t[6:]):
+                            continue
                         news['source'] = str(source[1].text)
                         newsList.append(news)
                     except Exception:
@@ -73,6 +93,7 @@ def selectText(d):
 
     return newsList
 
+
 def mkdir(path):
 
     folder = os.path.exists(path)
@@ -80,23 +101,51 @@ def mkdir(path):
     if not folder:
         os.makedirs(path)
 
+def checkProcess(p):
+    os.getcwd()
+    fileList = os.listdir(p)
+    aimTime = p[-6:]
+    processTime = '312359'
+    if len(fileList) > 0:
+        file = fileList[0]
+        file = file[:-4]
+        time = re.sub(aimTime, '', file)
+        if len(time) < 6:
+            time = '0'+time
+        processTime = time
+    return processTime
+
+
 userList = userReader.users()
 
 for user in userList:
 
     path = './'+user['name']
     mkdir(path)
-    for month in range(1,7):
-        childPath = path+'/20200'+str(7-month)
+    for month in range(1,8):
+
+        if month == 7:
+            aimTime = '201912'
+        else:
+            aimTime = '20200'+str(7-month)
+
+        childPath = path+'/'+aimTime
         mkdir(childPath)
+        pTime = checkProcess(childPath)
+        if pTime[0:1] == '01':
+            continue
+
         newsList = []
         url = user['url']+'?is_all=1&stat_date=20200'+str(7-month)
+        times = 6
 
         while url != '':
             browser.get(url)
             time.sleep(5+random.randint(1,5))
             count = 0
-            while not checkPages(browser):
+            state = False
+            while not state:
+                state = checkPages(browser)
                 browser.execute_script("window.scrollTo(0, document.body.scrollHeight)")
                 for _ in range(3):
                     time.sleep(1)
@@ -104,8 +153,12 @@ for user in userList:
                 if count > 30:
                     break
 
+            if not state or (times == 0):
+                times-=1
+                continue
+
             url = checkNextpage(browser)
-            newsL = selectText(browser)
+            newsL = selectText(browser,pTime)
             for news in newsL:
                 newsList.append(news)
 
