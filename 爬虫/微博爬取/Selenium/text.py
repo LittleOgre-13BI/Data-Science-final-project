@@ -41,7 +41,12 @@ def getNewsDetail(d,newsList,path):
                     break
         except Exception:
             pass
-        
+
+        for i in range(len(commentList)):
+            comment = commentList[i]
+            comment = comment.split('：', 1)
+            commentList[i] = comment[1]
+
         news['comments'] = commentList
         t = re.split(r'\D', news['time'])
         for i in range(1,3):
@@ -53,6 +58,7 @@ def getNewsDetail(d,newsList,path):
                  news['time'] + '</time>' + '\n<url>' + news['url'] + '</url>' + '\n\n' + '\n<text>' + news[
                      'text'] + '</text>' + '\n<comments>'
                  + '\n'.join(news['comments']) + '</comments>')
+        fw.close()
 
 def exec():
     browser = webdriver.Chrome(r".\chromedriver_win32\chromedriver.exe")

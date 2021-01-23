@@ -3,7 +3,7 @@ import re
 
 dirPath = r'C:\Users\86152\Desktop\大二上\数据科学\大作业\爬虫\微博爬取\Selenium'
 
-media = ['澎湃新闻']
+media = ['观察者网','凯雷','小满']
 
 for m in media:
     path = dirPath+'/'+m

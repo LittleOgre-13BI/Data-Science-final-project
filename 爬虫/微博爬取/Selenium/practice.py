@@ -4,10 +4,12 @@ import time,re,random
 import userReader
 import text
 
+#TODO 这是需要用的工具selenium的webdriver，你装好了后下面输打开这个程序的path
 browser = webdriver.Chrome(r".\chromedriver_win32\chromedriver.exe")
+
 browser.get('http://weibo.com/')
 aimRelevance = re.compile(r'肺炎|疫情|新冠|新型冠状|防疫|口罩|医疗物资|病毒|病例')
-time.sleep(60)
+time.sleep(30)
 
 
 def checkPages(d):
@@ -115,7 +117,8 @@ def checkProcess(p):
         processTime = time
     return processTime
 
-
+#TODO userList是列表形式装你要采集的用户的名字和网址，用户以字典的形式,你需要改一下
+#例:userList = [{'name':'中国新闻网','url':'https://weibo.com/chinanewsv'}]
 userList = userReader.users()
 
 for user in userList:
