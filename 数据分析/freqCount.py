@@ -7,6 +7,7 @@ import deconstruct
 def wordList(path):
     wordList = []
     vectorsList = deconstruct.de()
+    stopwords = [line.strip() for line in open('./stopwords_master/final_stopwords.txt', encoding='UTF-8').readlines()]
     for key in vectorsList.keys():
         if '人民日报训练集' in key:
             fw = open(key, 'rb')
@@ -18,16 +19,19 @@ def wordList(path):
             fw.close()
             words = re.split('[|]', text)
             for word in words:
-                if word not in wordList:
-                    wordList.append(word)
+                if word not in stopwords and  not word.isdigit() and '%' not in word and '.' not in word:
+                    if word not in wordList and len(word) > 1:
+                        wordList.append(word)
         else:
             newText = textDeconstruct.deconstruct(key)
             words = re.split('[|]', newText['text'])
             for word in words:
-                if word not in wordList:
-                    wordList.append(word)
+                if word not in stopwords and  not word.isdigit() and '%' not in word and '.' not in word:
+                    if word not in wordList and len(word) > 1:
+                        wordList.append(word)
+
     fw = open(path, 'w', 1, 'utf-8')
-    fw.write(','.join(wordList))
+    fw.write('\n'.join(wordList))
     fw.close()
 
 
@@ -168,23 +172,56 @@ def TFIDF(aimWord):
 
     return TF*IDF
 
-if __name__ == '__main__':
-    wordTF = {}
-    fw = open('./wordList.txt','rb')
+def makeVectors():
+    vectorsList = deconstruct.de()
+    fw = open('./weightVector.txt','rb')
     text = fw.read()
-    try:
-        text = text.decode('utf8')
-    except Exception:
-        text = text.decode('utf8', 'ignore')
+    text = text.decode('utf8','ignore')
     fw.close()
-    wordList = text.split(',')
-    for word in wordList:
-        wordTF[word] = aimT(word,0)
+    text = text.split(',')
+    weight = [float(x) for x in text]
+    fw = open('./eigenWord.txt','rb')
+    text = fw.read()
+    text = text.decode('utf8','ignore')
+    fw.close()
+    words = text.split('\r\n')
 
-    wordslist = sorted(wordTF.items(), key=lambda item:item[1], reverse=True)
     result = []
-    for item in wordList:
-        result.append('{0}:{1}\n'.format(item[0],item[1]))
-    fw = open('./wordsTF.txt','w',1,'utf8')
-    fw.write(''.join(result))
+    for key in vectorsList.keys():
+        vector = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        vector[20] = float(vectorsList[key])
+        if '人民日报' in key:
+            fw = open(key, 'rb')
+            text = fw.read()
+            text = text.decode('utf8', 'ignore')
+            fw.close()
+        else:
+            newText = textDeconstruct.deconstruct(key)
+            text = newText['text']
+        text = re.split('[|]', text)
+        for i in range(len(words)):
+            if words[i] in text:
+                vector[i] = weight[i]
+        vectorsList[key] = vector
+        result.append('({0},{1})'.format(key, str(vector)))
+
+    fw = open('./训练集/vectors.txt','w',1,'utf8')
+    fw.write('\n'.join(result))
+    fw.close()
+
+if __name__ == '__main__':
+    fw = open('./训练集/vectors.txt','rb')
+    text = fw.read()
+    fw.close()
+    text = text.decode('utf8','ignore')
+
+    vectors = re.findall('\((.*?)\)',text)
+    for i in range(len(vectors)):
+        vector = vectors[i]
+        vector = re.findall('\[(.*?)]',vector)
+        vector = vector[0]
+        vectors[i] = vector
+
+    fw = open('../SVM/text.data','w',1,'utf8')
+    fw.write('\n'.join(vectors))
     fw.close()
