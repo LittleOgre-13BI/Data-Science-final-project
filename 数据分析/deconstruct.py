@@ -1,7 +1,12 @@
 import re
 
 
-def de(path='./训练集/result.txt'):
+'''
+    @:param path
+    @:return newVectors--将向量映射关系以字典形式存储
+    解析result.txt以python数据结构存储
+'''
+def de(path='./result.txt'):
     fw = open(path,'rb')
     text = fw.read()
     try:
@@ -17,7 +22,4 @@ def de(path='./训练集/result.txt'):
         newVectors[vector[0]] = int(vector[1])
 
     return newVectors
-
-if __name__ == '__main__':
-    print(de())
 

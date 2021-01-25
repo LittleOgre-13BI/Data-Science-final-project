@@ -1,9 +1,13 @@
 import freqCount
 
 '''
+    @:param aimWord 目标词
+    @:return result 目标词的卡方值
             |属于疫情报导|不属于疫情报导
 包含某词     |A         |B
 不包含某词   |C         |D
+    两种计算方式：1、正常卡方检验
+                 2、利用正负符号增益二分类的信息
 '''
 
 
@@ -12,7 +16,6 @@ def Chisquare(aimWord):
     B = float(freqCount.aimD(aimWord,-1))
     C = float(freqCount.totalD(1) - A)
     D = float(freqCount.totalD(-1) - B)
-
     n = A+B+C+D
     temp = A*D-B*C
     # ea = (A+C)*(A+B)/n
@@ -24,7 +27,6 @@ def Chisquare(aimWord):
     # c = C-ec
     # d = D-ed
     # result = a*abs(a)/ea - b*abs(b)/eb - c*abs(c)/ec +d*abs(d)/ed
-
     result = n*temp*temp/(A+C)/(A+B)/(B+D)/(C+D)
     return result
 

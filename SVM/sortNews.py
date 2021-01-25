@@ -1,8 +1,11 @@
 import os
 import re
 import svm
-import shutil
 import textDeconstruct
+
+'''
+    对ResourceSeg里的新闻进行分类，将预测疫情相关报导的新闻输出到ResourceSorted目录下
+'''
 
 clf = svm.getSVMclf()
 os.getcwd()
@@ -19,11 +22,9 @@ text = text.decode('utf8', 'ignore')
 fw.close()
 text = text.split(',')
 weight = [float(x) for x in text]
-
 savePath = './ResourceSorted/'
 if not os.path.exists(savePath):
     os.makedirs(savePath)
-
 for media in newsMedia:
     mediaPath = path+media+'/'
     mediaSave = savePath+media+'/'

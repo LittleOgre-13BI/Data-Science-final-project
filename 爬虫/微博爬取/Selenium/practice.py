@@ -2,16 +2,20 @@ import os
 from selenium import webdriver
 import time,re,random
 import userReader
-import text
+import textSave
 
-#TODO 这是需要用的工具selenium的webdriver，你装好了后下面输打开这个程序的path
+'''
+    webdriver将在窗口用Chrome打开微博网页，且在初始页面停留供登录账号
+'''
 browser = webdriver.Chrome(r".\chromedriver_win32\chromedriver.exe")
-
 browser.get('http://weibo.com/')
 aimRelevance = re.compile(r'肺炎|疫情|新冠|新型冠状|防疫|口罩|医疗物资|病毒|病例')
 time.sleep(30)
 
-
+'''
+    @:param d--webdriver控件
+    @:return boolean 表示是否将页面下拉到底部，通过查询微博翻页元素实现
+'''
 def checkPages(d):
     try:
         element = d.find_element_by_class_name('W_pages')
@@ -19,6 +23,11 @@ def checkPages(d):
         return False
     return True
 
+
+'''
+    @:param d--webdriver控件
+    @:return url--下一页的网址,若没有下一页网址则返回空字符串''
+'''
 def checkNextpage(d):
     try:
         element = d.find_element_by_class_name('W_pages')
@@ -33,6 +42,11 @@ def checkNextpage(d):
     print("couldn't find next page url")
     return ''
 
+
+'''
+    @:param src,dest
+    @:return boolean,检测src时间是否大于dest时间
+'''
 def checkTime(src,dest):
     for i in range(0, 3):
         a = int(dest[i * 2 : i * 2 + 2])
@@ -41,7 +55,16 @@ def checkTime(src,dest):
              return True
     return False
 
-
+'''
+    @:param d--webdriver控件
+            processTime--起始时间，表示爬取新闻的起始时间
+    @:return newsList
+    按标题或微博话题关键字以起始时间往前爬取新闻信息，title--标题
+                                                 url--网址
+                                                 time--发布时间
+                                                 source--新闻来源
+    并以字典形式保存
+'''
 def selectText(d,processTime):
     texts = d.find_elements_by_class_name('WB_detail')
     newsList = []
@@ -92,17 +115,23 @@ def selectText(d,processTime):
                 except Exception:
                     # print(name+"couldn't find text opt url")
                     pass
-
     return newsList
 
-
+'''
+    @:param path
+    @:return
+    在某路径下建立文件夹（如果该文件夹不存在的话）
+'''
 def mkdir(path):
-
     folder = os.path.exists(path)
-
     if not folder:
         os.makedirs(path)
 
+'''
+    @:param path
+    @:return processTime
+    查询某目录下爬取到的最早的新闻时间，以此为起始时间继续往前爬取
+'''
 def checkProcess(p):
     os.getcwd()
     fileList = os.listdir(p)
@@ -117,16 +146,12 @@ def checkProcess(p):
         processTime = time
     return processTime
 
-#TODO userList是列表形式装你要采集的用户的名字和网址，用户以字典的形式,你需要改一下
-#例:userList = [{'name':'中国新闻网','url':'https://weibo.com/chinanewsv'}]
+
 userList = userReader.users()
-
 for user in userList:
-
-    path = './'+user['name']
+    path = './语料库/'+user['name']
     mkdir(path)
     for month in range(1,8):
-
         if month == 7:
             aimTime = '201912'
         else:
@@ -137,7 +162,6 @@ for user in userList:
         pTime = checkProcess(childPath)
         if pTime[0:1] == '01':
             continue
-
         newsList = []
         url = user['url']+'?is_all=1&stat_date=20200'+str(7-month)
         times = 6
@@ -166,8 +190,7 @@ for user in userList:
                 newsList.append(news)
 
         user['news'] = newsList
-        text.getNewsDetail(browser,user['news'],childPath)
-    # text.getNewsDetail(user['news'])
+        textSave.getNewsDetail(browser,user['news'],childPath)
 
 browser.close()
 

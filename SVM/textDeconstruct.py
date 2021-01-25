@@ -1,5 +1,10 @@
 import re
 
+'''
+    @:param path
+    @:return newText,字典形式，keys:source,title,time,url,text,comments
+    都是str类型，通过re.split('\r',comments)分出每一条comment
+'''
 def deconstruct(path):
     news = open(path, 'rb')
     text = news.read()
@@ -8,7 +13,7 @@ def deconstruct(path):
     except Exception:
         text = text.decode('utf8', 'ignore')
     news.close()
-    text = re.subn('\n', '', text)
+    text = re.subn('\r\n', '', text)
     types = ['source', 'title', 'time', 'url', 'text', 'comments']
     newText = {}
     for t in types:

@@ -3,7 +3,6 @@ import json                                     #处理json格式的数据
 from bs4 import BeautifulSoup                   #用于数据抽取
 import re                                       #正则表达式
 from pybloom_live import ScalableBloomFilter    #用于URL去重
-import codecs                                   #用于存储爬取信息
 import os
 
 
@@ -48,7 +47,7 @@ def getDetailPageBybs(url):
 
 #文本存储
 def saveNews(data, title):
-    filepath = os.getcwd() + '/新闻1/' + title + '.txt'
+    filepath = os.getcwd() + '新浪滚动新闻/新闻1/' + title + '.txt'
     f = open(filepath, 'a+', encoding='utf-8')
     f.write(data)
     f.close()
