@@ -21,10 +21,10 @@ def getSVMclf():
     classifier = svm.SVC(C=100, kernel='rbf', gamma=0.01, decision_function_shape='ovr')  # ovr:一对多策略
     classifier.fit(train_data, train_label.ravel())  # ravel函数在降维时默认是行序优先
 
-    # # 4.计算svc分类器的准确率
-    # print("训练集：", classifier.score(train_data, train_label))
-    # print("测试集：", classifier.score(test_data, test_label))
-    #
+    # 4.计算svc分类器的准确率
+    print("训练集：", classifier.score(train_data, train_label))
+    print("测试集：", classifier.score(test_data, test_label))
+
     # # 查看决策函数
     # dec = classifier.decision_function(train_data)
     # print('train_decision_function:\n', dec)

@@ -13,7 +13,7 @@ influence of samples selected by the model as support vectors.
 
 The ``C`` parameter trades off correct classification of training examples
 against maximization of the decision function's margin. For larger values of
-``C``, a smaller margin will be accepted if the decision function is better at
+``C``, a smaller margin will be acceptDDed if the decision function is better at
 classifying all training points correctly. A lower ``C`` will encourage a
 larger margin, therefore a simpler decision function, at the cost of training
 accuracy. In other words ``C`` behaves as a regularization parameter in the

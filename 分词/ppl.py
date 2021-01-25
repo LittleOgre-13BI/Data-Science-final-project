@@ -23,7 +23,6 @@ for mydir in catelist:
 
     # if mydir == '人民日报' or mydir == '人民日报1':
     #     continue
-
     class_path = corpus_path + mydir + "/"
     seg_dir = seg_path + mydir + "_seg/"
     if not os.path.exists(seg_dir):
