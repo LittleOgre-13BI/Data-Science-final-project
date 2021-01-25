@@ -19,7 +19,6 @@ for m in media:
             except Exception:
                 text = text.decode('utf8', 'ignore')
             fw.close()
-
             types = ['source', 'title', 'time', 'url', 'text', 'comments']
             text = re.subn('\n', '', text)
             newText = {}
@@ -31,7 +30,6 @@ for m in media:
                     state = True
                 else:
                     newText[t] = temp[0]
-
             if state:
                 break
             try:

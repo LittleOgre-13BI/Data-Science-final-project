@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="053968a7-ece2-4d75-9ed1-6acee4af4fa2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/爬虫.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\86152\Desktop\大二上\数据科学\大作业\爬虫\微博爬取\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mQ61JZHqYxD7ZwO7U3kh8xbsM0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\86152\Desktop\Selenium" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.zeroCommentDel">
+    <configuration name="detect (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/detect.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="practice" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="reppl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reppl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="textProcessing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/textProcessing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="zeroCommentDel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zeroCommentDel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.zeroCommentDel" />
+        <item itemvalue="Python.textProcessing" />
+        <item itemvalue="Python.practice" />
+        <item itemvalue="Python.detect (1)" />
+        <item itemvalue="Python.reppl" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="053968a7-ece2-4d75-9ed1-6acee4af4fa2" name="Default Changelist" comment="" />
+      <created>1609413250491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609413250491</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="251" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610833612756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="251" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1610833612756" />
+    <state x="434" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610293090837">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="434" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610293090837" />
+    <state x="256" y="53" key="#practice" timestamp="1611118210803">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="256" y="53" key="#practice/0.0.1536.824@0.0.1536.824" timestamp="1611118210803" />
+    <state x="933" y="171" key="FileChooserDialogImpl" timestamp="1611367511322">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="933" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611367511322" />
+    <state width="842" height="342" key="GridCell.Tab.0.bottom" timestamp="1611373875806">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="842" height="342" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611373875806" />
+    <state width="842" height="342" key="GridCell.Tab.0.center" timestamp="1611373875806">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="842" height="342" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611373875806" />
+    <state width="842" height="342" key="GridCell.Tab.0.left" timestamp="1611373875806">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="842" height="342" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611373875806" />
+    <state width="842" height="342" key="GridCell.Tab.0.right" timestamp="1611373875806">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="842" height="342" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611373875806" />
+    <state width="842" height="328" key="GridCell.Tab.1.bottom" timestamp="1611373875797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="842" height="328" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611373875797" />
+    <state width="842" height="328" key="GridCell.Tab.1.center" timestamp="1611373875797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="842" height="328" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1611373875797" />
+    <state width="842" height="328" key="GridCell.Tab.1.left" timestamp="1611373875797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="842" height="328" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1611373875797" />
+    <state width="842" height="328" key="GridCell.Tab.1.right" timestamp="1611373875797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="842" height="328" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1611373875797" />
+    <state x="271" y="55" key="SettingsEditor" timestamp="1611138415088">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="271" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611138415088" />
+    <state x="239" y="231" key="com.intellij.ide.util.TipDialog" timestamp="1611151832322">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="239" y="231" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1611151832322" />
+    <state x="810" y="0" width="649" height="785" key="dock-window-1" timestamp="1611151840954">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="810" y="0" width="649" height="785" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1611151840954" />
+    <state x="9" y="132" width="572" height="473" key="dock-window-2" timestamp="1611209543903">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="9" y="132" width="572" height="473" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1611209543903" />
+    <state x="361" y="282" width="572" height="415" key="dock-window-3" timestamp="1611366175666">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="282" width="572" height="415" key="dock-window-3/0.0.1536.824@0.0.1536.824" timestamp="1611366175666" />
+    <state x="582" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611546885456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="582" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611546885456" />
+  </component>
+</project>
